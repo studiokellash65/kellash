@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KELLASH STUDIO</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/92d70a2fd8.js"></script>
+</head>
+
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .box{
+    background-color: #eee;
+    width: 330px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 25px;
+  }
+  input{
+    width: 240px;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 18px;
+  }
+  .fa-solid:hover{
+    color: orangered;
+    cursor: pointer;
+  }
+</style>
+<body>
+
+ <header>
+    <nav class="navbar">
+      <div class="logo">KELLASH STUDIO</div>
+      <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="updates.html">Updates</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+      <!-- burger menu -->
+      <div class="burger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </nav>
+  </header>
+  <!-- 🔹 Ads Banner -->
+    <div class="ads-banner">
+        <div class="scroll-text">
+            🔔 NEW UPDATES | Join Kellash Studio today and unlock unlimited entertainment, creativity, and opportunities to showcase your talent without limits! 🔔
+        </div>
+    </div>
+  <center>
+<div class="box">
+  <input type="text"
+  placeholder="search">
+  <i class="fa-solid fa-magnifying-glass"></i>
+</div>
+  </center>
+  <!-- Hero Section -->
+  <section class="hero">
+      <h1 style="font-size: 25px;">KARIBU KELLASH STUDIO</h1>
+      <p></p>
+      <a href="services.html" class="btn">Tazama Huduma Zetu</a>
+  </section>
+  <center>
+<div class="cardyanyimbo">
+    <!-- Picha ya track -->
+    <img src="daino album.jpg" alt="Track 1 Cover" class="track-img" />
+
+    <!-- Jina la track -->
+    <h3 style="font-size: 24px;">Daino Minoma Ft Mashada-Akili ya ndocc</h3>
+
+    <!-- Audio Player -->
+    <audio controls>
+        <source src="daino mp3.mp3" type="audio/mpeg" width="20px"/>
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Download Button -->
+    <a href="audio/track1.mp3" download="Nyimbo1" class="btn">Download</a>
+</div>
+<br>
+
+
+<div class="cardyanyimbo">
+    <!-- Picha ya track -->
+    <img src="kim voice cover.jpg" alt="Track 1 Cover" class="track-img" />
+
+    <!-- Jina la track -->
+    <h3 style="font-size: 24px;">Dee Breezy x Kim Voice- Waambie (unreleased)</h3>
+
+    <!-- Audio Player -->
+    <audio controls>
+        <source src="kim voice mp3.m4a" type="audio/mpeg" width="20px"/>
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Download Button -->
+    <a href="audio/track1.mp3" download="Nyimbo1" class="btn">Download</a>
+</div>
+</center>
+  <!-- Services Section -->
+  <section class="services">
+      <h2>Huduma Zetu</h2>
+      <div class="service-cards">
+          <div class="card">
+              <h3>Music Production</h3>
+              <p>Tunatengeneza beats, recording, mixing na mastering kwa ubora wa hali ya juu.</p>
+          </div>
+          <div class="card">
+              <h3>Artist Promotion</h3>
+              <p>Tunasaidia wasanii kufikia mashabiki wapya kupitia mitandao ya kijamii na platforms kubwa.</p>
+          </div>
+          <div class="card">
+              <h3>Events & Shows</h3>
+              <p>Tunaanda matamasha, gigs na livestreams kwaajili ya kuonyesha kazi za wasanii wetu.</p>
+          </div>
+      </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="contact-info">
+      For Adverts,sponsorship and partnership,get in touch with
+      <p><strong>Email:</strong> kellashstudiotz@gmail.com</p>
+      <p><strong>Phone:</strong> +255 784-800-125</p>
+      <p><strong>Location:</strong> Dar es Salaam, Tanzania</p>
+    </div>
+    <br>
+      <p>&copy; 2021-2025 KELLASH STUDIO. All rights reserved.</p>
+  </footer>
+
+<!-- ✅ JavaScript -->
+  <script>
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.nav-links');
+
+    burger.addEventListener('click', () => {
+      // Toggle both burger and nav visibility
+      nav.classList.toggle('nav-active');
+      burger.classList.toggle('toggle');
+    });
+  </script>
+
+
+</body>
+</html>
