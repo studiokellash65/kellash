@@ -110,17 +110,58 @@ document.getElementById('downloadAll').addEventListener('click', async () => {
     const zip = new JSZip();
 
     const mp3Data = await fetch('daino mp3.mp3').then(r => r.arrayBuffer());
-    const imgData = await fetch('daino album.jpg').then(r => r.arrayBuffer());
+  
 
-    zip.file('Daino-AkiliYaNdocc.mp3', mp3Data);
-    zip.file('Daino-Cover.jpg', imgData);
+    zip.file('Daino ft Benito Mc-Akili Ya Ndocc.mp3', mp3Data);
+    
 
     const blob = await zip.generateAsync({ type: 'blob' });
     const url = URL.createObjectURL(blob);
 
     const a = document.createElement('a');
     a.href = url;
-    a.download = 'Daino-Ndocc.zip';
+    a.download = 'Daino Minoma ft Benito Mc- Akili ya ndocc.zip';
+    a.click();
+    URL.revokeObjectURL(url);
+});
+</script>
+
+</div>
+<div class="cardyanyimbo" style="border:1px solid #ccc; padding:15px; width:300px; text-align:center; margin:10px; border-radius:10px;">
+    <!-- Picha ya track -->
+    <img src="cr juma.jpg" alt="Track Cover" style="width:100%; border-radius:10px;" />
+
+    <!-- Jina la track -->
+    <h3 style="font-size: 20px; margin:10px 0;">CTG Harmaton- Enjo</h3>
+
+    <!-- Audio Player -->
+    <audio controls style="width:100%;">
+        <source src="juma.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Download Button -->
+    <button id="downloadAll" style="padding:10px 15px; background-color:#000000; color:white; border:none; border-radius:5px; cursor:pointer; margin-top:10px;">
+    Download 
+</button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.0/jszip.min.js"></script>
+<script>
+document.getElementById('downloadAll').addEventListener('click', async () => {
+    const zip = new JSZip();
+
+    const mp3Data = await fetch('daino mp3.mp3').then(r => r.arrayBuffer());
+  
+
+    zip.file('CTG Harmaton- Enjo.zip', mp3Data);
+    
+
+    const blob = await zip.generateAsync({ type: 'blob' });
+    const url = URL.createObjectURL(blob);
+
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'CTG Harmaton- Enjo.zip';
     a.click();
     URL.revokeObjectURL(url);
 });
@@ -128,6 +169,47 @@ document.getElementById('downloadAll').addEventListener('click', async () => {
 
 </div>
 
+<div class="cardyanyimbo" style="border:1px solid #ccc; padding:15px; width:300px; text-align:center; margin:10px; border-radius:10px;">
+    <!-- Picha ya track -->
+    <img src="fammi.jpg" alt="Track Cover" style="width:100%; border-radius:10px;" />
+
+    <!-- Jina la track -->
+    <h3 style="font-size: 20px; margin:10px 0;">Fammi africa- Umejaa</h3>
+
+    <!-- Audio Player -->
+    <audio controls style="width:100%;">
+        <source src="fammi mp3.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Download Button -->
+    <button id="downloadAll" style="padding:10px 15px; background-color:#000000; color:white; border:none; border-radius:5px; cursor:pointer; margin-top:10px;">
+    Download 
+</button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.0/jszip.min.js"></script>
+<script>
+document.getElementById('downloadAll').addEventListener('click', async () => {
+    const zip = new JSZip();
+
+    const mp3Data = await fetch('fammi mp3.mp3').then(r => r.arrayBuffer());
+  
+
+    zip.file('CTG Harmaton- Enjo.zip', mp3Data);
+    
+
+    const blob = await zip.generateAsync({ type: 'blob' });
+    const url = URL.createObjectURL(blob);
+
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'fammi africa-umejaa.zip';
+    a.click();
+    URL.revokeObjectURL(url);
+});
+</script>
+
+</div>
 
 <div class="cardyanyimbo">
     <!-- Picha ya track -->
